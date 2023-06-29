@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Dark-Violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  --Very-Dark-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "DM Serif Display", serif;
+  font-family: "Karla", sans-serif;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 2rem;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  color: var(--Dark-Grayish-Violet);
+}
+
+.nav-links a {
+  letter-spacing: 1.2px;
+  color: var(--Dark-Grayish-Violet);
+}
+
+.nav-links a:hover {
+  color: var(--Very-Dark-Violet);
+}
+
+.nav-links .btn-dark {
+  color: var(--Dark-Violet);
+  border: 2px solid var(--Dark-Violet);
+  padding: 0.5rem 1.25rem;
+}
+
+.nav-links .btn-dark:hover {
+  color: var(--Very-Light-Gray);
+  background-color: var(--Very-Dark-Violet);
+}
+
+.menu-open {
+  display: none;
+}
