@@ -35,6 +35,7 @@ nav {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 100;
 }
 
 #nav-links {
@@ -89,7 +90,18 @@ button {
 }
 /* Mobile View */
 @media screen and (max-width: 48rem) {
+  nav {
+    position: relative;
+    z-index: 1000;
+  }
+  #nav-wrapper {
+    transform: translateY(-100dvh);
+    transition: transform 3s ease-in-out;
+    z-index: -1000;
+  }
+
   #nav-wrapper.active {
+    transform: translateY(0%);
     top: 10dvh;
     left: 0;
     padding-top: 3.375rem;
