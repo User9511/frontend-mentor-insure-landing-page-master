@@ -28,7 +28,8 @@ nav {
   justify-content: space-between;
   max-width: 90rem;
   margin: 0 auto;
-  padding: 2rem;
+  height: 10dvh;
+  padding: 0 2rem;
   text-transform: uppercase;
 }
 
@@ -74,7 +75,6 @@ button {
   display: block;
   width: 25px;
   height: 3px;
-  margin: 5px;
   background-color: var(--Dark-Violet);
   transition: 0.3s ease-in-out;
 }
@@ -128,20 +128,25 @@ button {
   }
 
   .hamburger {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    outline: 1px solid var(--Dark-Violet);
+    padding: 0.25rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 0 0 0;
+    width: 1.5rem;
+    height: 0.188rem;
     background-color: var(--Dark-Violet);
     transition: 0.3s ease-in-out;
   }
 
   .bar.active:nth-child(1) {
-    transform: rotate(45deg) translate(3px, 4px);
+    transform: rotate(45deg) translate(5.5px, 6px);
   }
 
   .bar.active:nth-child(2) {
@@ -149,6 +154,6 @@ button {
   }
 
   .bar.active:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -9px);
+    transform: rotate(-45deg) translate(6px, -5px);
   }
 }
