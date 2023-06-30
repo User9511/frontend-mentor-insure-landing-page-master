@@ -101,7 +101,7 @@ button {
   }
 
   #nav-wrapper.active {
-    transform: translateY(0%);
+    transform: translateY(0dvh);
     top: 10dvh;
     left: 0;
     padding-top: 3.375rem;
