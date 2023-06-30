@@ -32,33 +32,120 @@ nav {
   text-transform: uppercase;
 }
 
-.nav-links {
+#nav-links {
   display: flex;
   align-items: center;
   gap: 1.75rem;
   color: var(--Dark-Grayish-Violet);
 }
 
-.nav-links a {
+#nav-links a {
   letter-spacing: 1.2px;
   color: var(--Dark-Grayish-Violet);
 }
 
-.nav-links a:hover {
+#nav-links a:hover {
   color: var(--Very-Dark-Violet);
 }
 
-.nav-links .btn-dark {
+#nav-links .btn-view-plans {
   color: var(--Dark-Violet);
   border: 2px solid var(--Dark-Violet);
   padding: 0.5rem 1.25rem;
 }
 
-.nav-links .btn-dark:hover {
+#nav-links .btn-view-plans:hover {
   color: var(--Very-Light-Gray);
   background-color: var(--Very-Dark-Violet);
 }
 
-.menu-open {
+button {
+  border: 0;
+  outline: 0;
+  background: none;
+  border: 1px solid var(--Dark-Violet);
+}
+
+.hamburger {
   display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: var(--Dark-Violet);
+  transition: 0.3s ease-in-out;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+}
+/* Mobile View */
+@media screen and (max-width: 48rem) {
+  #nav-wrapper.active {
+    top: 5rem;
+    left: 0;
+    padding-top: 3.375rem;
+    background: var(--Very-Dark-Violet);
+    height: 100%;
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+  }
+
+  #nav-links {
+    display: none;
+    gap: 2.5rem;
+  }
+
+  #nav-links a {
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    color: var(--Very-Light-Gray);
+  }
+
+  #nav-links .btn-view-plans {
+    display: block;
+    color: var(--Very-Light-Gray);
+    border: 2px solid var(--Very-Light-Gray);
+    padding: 1rem;
+    text-align: center;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  #nav-links li:last-child {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0 0 0;
+    background-color: var(--Dark-Violet);
+    transition: 0.3s ease-in-out;
+  }
+
+  .bar.active:nth-child(1) {
+    transform: rotate(45deg) translate(3px, 4px);
+  }
+
+  .bar.active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.active:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -9px);
+  }
 }
