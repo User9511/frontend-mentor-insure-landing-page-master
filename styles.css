@@ -195,11 +195,11 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: yellow !important;
     z-index: 1000;
     position: relative;
     padding: 0 2rem;
     height: 10dvh;
+    background-color: var(--Very-Light-Gray);
   }
 
   #nav-wrapper {
