@@ -204,7 +204,7 @@ p {
 
   #nav-wrapper {
     transform: translateY(-100dvh);
-    transition: transform 3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     z-index: -10;
   }
 
