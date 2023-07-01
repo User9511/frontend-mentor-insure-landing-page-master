@@ -9,7 +9,7 @@
     <title>Frontend Mentor | Insure landing page</title>
   </head>
   <body>
-    <nav>
+    <!-- <nav>
       <img src="./images/logo.svg" alt="insure logo" class="logo" />
       <div id="nav-wrapper">
         <ul id="nav-links">
@@ -24,7 +24,32 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-    </nav>
+    </nav> -->
+
+
+
+    <!-- Try putting in a the logo & hamburger seperate div within nav and set it's background to white (as well as any other required styling that was in nav) put the wrapper underneath that. For example -->
+
+       <nav>
+        <div class="nav-mobile">
+          <img src="./images/logo.svg" alt="insure logo" class="logo">
+          <button id="mobileMenuTrigger" class="hamburger" aria-label="Mobile Menu Toggle" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <div id="nav-wrapper">
+          <ul id="nav-links">
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#" class="btn-view-plans"> View plans</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
     <main>
       <div class="hero-outer-wrapper">
         <div class="hero-wrapper">
