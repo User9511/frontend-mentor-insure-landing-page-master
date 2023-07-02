@@ -190,6 +190,7 @@ p {
 .about-section {
   max-width: 80rem;
   margin: 18rem auto;
+  padding: 0 2rem;
 }
 
 .about-section span {
