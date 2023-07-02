@@ -406,6 +406,7 @@ p {
   .about-section {
     margin: 10rem auto;
     text-align: center;
+    padding: 0;
   }
 
   .about-section span {
