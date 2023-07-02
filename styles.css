@@ -19,6 +19,7 @@
 body {
   font-family: "DM Serif Display", serif;
   font-family: "Karla", sans-serif;
+  background: var(--Very-Light-Gray);
 }
 
 body.menu-open {
@@ -152,7 +153,7 @@ button {
   top: 7rem;
 }
 
-.white-span {
+.light-span {
   display: block;
   background-color: var(--Very-Light-Gray);
   width: 10rem;
@@ -169,7 +170,6 @@ h1 {
 p {
   color: var(--Very-Light-Gray);
   line-height: 1.8;
-  /* width: 79%; */
 }
 
 .btn-view-plans-light {
@@ -184,6 +184,52 @@ p {
 .btn-view-plans-light:hover {
   color: var(--Dark-Violet);
   background-color: var(--Very-Light-Gray);
+}
+
+/* About Section - We're Different */
+.about-section {
+  max-width: 80rem;
+  margin: 18rem auto;
+}
+
+.about-section span {
+  font-family: "DM Serif Display", serif;
+  font-size: 4.7rem;
+  color: var(--Very-Dark-Violet);
+}
+
+.dark-span {
+  display: block;
+  background-color: var(--Grayish-Blue);
+  width: 10rem;
+  height: 1px;
+  margin-bottom: 3rem;
+}
+
+/* Cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin: 2.25rem 0 0.785rem 0;
+}
+
+.card p {
+  color: var(--Dark-Grayish-Violet);
+  width: 89%;
+}
+
+.card-icon {
+  max-width: 5rem;
 }
 
 /* Mobile View */
@@ -353,5 +399,34 @@ p {
     justify-self: auto;
     position: relative;
     top: 0rem;
+  }
+
+  /* About Section - We're Different */
+  .about-section {
+    margin: 10rem auto;
+    text-align: center;
+  }
+
+  .about-section span {
+    font-size: 3.2rem;
+  }
+
+  .dark-span {
+    margin: 3rem auto;
+  }
+
+  /* Cards */
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    align-items: center;
+    text-align: center;
+  }
+
+  .card p {
+    width: 84%;
   }
 }
