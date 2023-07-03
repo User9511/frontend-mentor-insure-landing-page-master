@@ -359,6 +359,8 @@ footer::after {
   nav {
     display: block;
     padding: 0;
+    position: sticky;
+    background-color: var(--White);
   }
   .nav-mobile {
     display: flex;
@@ -368,7 +370,6 @@ footer::after {
     position: relative;
     padding: 0 2rem;
     height: 10dvh;
-    background-color: var(--Very-Light-Gray);
   }
 
   #nav-wrapper {
@@ -451,7 +452,6 @@ footer::after {
   }
 
   /* Hero Section */
-
   .hero-wrapper {
     display: grid;
     grid-template-columns: 1fr;
