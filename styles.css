@@ -189,7 +189,7 @@ p {
 /* About Section - We're Different */
 .about-section {
   max-width: 80rem;
-  margin: 18rem auto;
+  margin: 18rem auto 12rem auto;
   padding: 0 2rem;
 }
 
@@ -231,6 +231,42 @@ p {
 
 .card-icon {
   max-width: 5rem;
+}
+
+/* Find out more about how we work */
+.find-out-more-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--Dark-Violet);
+  max-width: 80rem;
+  margin: 0 auto 10rem auto;
+  position: relative;
+}
+
+.find-out-more-section::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  position: absolute;
+}
+
+h3 {
+  font-family: "DM Serif Display", serif;
+  font-size: 3.8rem;
+  color: var(--Very-Light-Gray);
+  line-height: 1;
+  padding: 5rem;
+  margin-left: 2rem;
+}
+
+.find-out-more-section .btn-view-plans-light {
+  width: 15%;
+  margin-right: 5rem;
 }
 
 /* Mobile View */
@@ -430,5 +466,45 @@ p {
 
   .card p {
     width: 84%;
+  }
+
+  /* Find out more about how we work */
+  .find-out-more-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--Dark-Violet);
+    max-width: 80rem;
+    margin: 0 1.5rem 10rem 1.5rem;
+
+    position: relative;
+  }
+
+  .find-out-more-section::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(./images/bg-pattern-how-we-work-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: absolute;
+  }
+
+  h3 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.5rem;
+    color: var(--Very-Light-Gray);
+    line-height: 1;
+    padding: 5rem 1.5rem 3rem 1.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .find-out-more-section .btn-view-plans-light {
+    width: 40%;
+    margin: 0 0 5rem 0;
+    align-self: center;
   }
 }
