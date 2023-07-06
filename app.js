@@ -9,5 +9,9 @@ mobileMenuTrigger.addEventListener("click", function () {
   navWrapper.classList.toggle("active");
   navLinks.classList.toggle("active");
   bars.forEach((bar) => bar.classList.toggle("active"));
-  body.classList.toggle("menu-open"); // Add or remove "menu-open" class to the body
+  body.classList.toggle("menu-open");
+
+  // Update aria-expanded attribute
+  const isExpanded = mobileMenuTrigger.getAttribute("aria-expanded") === "true";
+  mobileMenuTrigger.setAttribute("aria-expanded", !isExpanded);
 });
